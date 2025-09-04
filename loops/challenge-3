@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    int nm, total = 0;
+    
+    printf("Entrez un nombre: ");
+    scanf("%d", &nm);
+    
+    for (int i = 1; i <= nm; i++) {
+        total += i;
+    }
+    printf("%d\n", total);
+    
+    return 0;
+}

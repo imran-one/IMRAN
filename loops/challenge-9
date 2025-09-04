@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    int nm, c = 0;
+
+    printf("Enter nambre : ");
+    scanf("%d", &nm);
+
+    if (nm == 0) {
+        c = 1;
+    } else {
+        for(; nm != 0; nm = nm / 10) {
+            c++;
+        }
+    }
+
+    printf("%d\n", c);
+    return 0;
+}

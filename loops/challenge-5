@@ -1,0 +1,27 @@
+
+#include <stdio.h>
+
+int main() {
+    int namber1;
+    int namber2;
+    int result=1;
+    
+    printf("Enter a namber : ");
+    scanf("%d" ,&namber1);
+    
+    printf("enter the power of the namber : ");
+    scanf("%d" ,&namber2);
+    if (namber2==0){
+         printf("the result of %d pow %d is 1" , namber1 ,namber2 ,result );
+    }
+    else {
+    for (int i=1; i<=namber2; i++) {
+        result*=namber1;
+        
+    }
+    }
+    
+    printf("\n %d ^ %d = %d" , namber1 ,namber2 ,result );
+
+    return 0;
+}
