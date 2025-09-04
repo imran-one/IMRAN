@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int nm, total = 0;
+    
+    printf("Entrez un nombre: ");
+    scanf("%d", &nm);
+    
+    for (int i = 1; i <= nm; i++) {
+        int k=total;
+        total += i;
+        
+        printf("\n%d + %d = %d",k,i, total);
+    }
+    
+    return 0;
+}
