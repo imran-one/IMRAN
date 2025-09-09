@@ -1,9 +1,9 @@
 #include<stdio.h>
 
-int maximum(int a,int b){
+int minimum(int a,int b){
     if (a<b){
-        return b;
-    }else return a;
+        return a;
+    }else return b;
     
 }
 
@@ -14,7 +14,7 @@ int main(){
     printf("entre le nombre b : ");
     scanf("%d", &b );
 
-    printf("le plus grand nombre est : %d", maximum(a,b));
+    printf("le plus petit nombre est : %d", minimum(a,b));
     return 0;
     
 }
