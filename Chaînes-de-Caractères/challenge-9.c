@@ -5,7 +5,6 @@ int main() {
     char tab2[100];
     int j = 0;
 
-    
     printf("Entrez une phrase  : ");
     fgets(tab1, 100, stdin);
 
@@ -15,8 +14,6 @@ int main() {
             j++;
         }
     }
-    
-    tab2[j] = '\0';
 
     printf("Chaine sans espaces : %s\n", tab2);
 
